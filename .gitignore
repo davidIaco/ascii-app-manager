@@ -1,0 +1,9 @@
+.settings/
+vendor/
+.buildpath
+.project
+web/node_modules/
+app/.htpasswd
+web/bar.php
+web/foo.php
+web/mar.php

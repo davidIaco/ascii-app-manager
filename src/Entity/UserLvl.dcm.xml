@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="UserLvl" table="user_lvl">
+    <unique-constraints>
+      <unique-constraint name="lvl_name" columns="lvl_name"/>
+    </unique-constraints>
+    <id name="lvlId" type="integer" column="lvl_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="lvlName" type="string" column="lvl_name" length="32" nullable="false">
+      <options>
+        <option name="fixed">1</option>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>
